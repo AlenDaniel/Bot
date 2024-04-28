@@ -1,0 +1,2 @@
+
+configpath = './Bot/wechaty.yaml'
