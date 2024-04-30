@@ -11,4 +11,4 @@ def readyaml():
 configdata = readyaml()
 os.environ['TOKEN'] = configdata['token']
 os.environ['WECHATY_PUPPET_SERVICE_ENDPOINT'] = configdata['host']
-asyncio.run(MyBot().start())
+asyncio.run(MyBot(configdata).start())

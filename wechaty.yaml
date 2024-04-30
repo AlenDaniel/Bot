@@ -1,3 +1,23 @@
-
+# wechaty config
 token: "929a5220-fd76-4fc0-9c81-9c4184fba2f7"
 host: "127.0.0.1:8080"
+
+# llm config
+model: 'qwen-max-longcontext'
+model_list: [
+  ['llama3-8b','llama3-70b','llama3-8b-instruct','llama3-70b-instruct','llama2-7b-chat-v2','llama2-13b-chat-v2'],
+  ['qwen-turbo','qwen-plus','qwen-max','qwen-max-0403','qwen-max-0107','qwen-max-1201','qwen-max-longcontext']
+]
+api_key: 'sk-0f9ec10e768a4f0f97ea15356525ce81'
+
+mode: 1 # 0: use llama model, 1: use qwen model,2: use loacl model
+model_select: 6 # llama{0: llama3-8b, 1: llama3-70b, 2: llama3-8b-instruct, 3: llama3-70b-instruct, 4: llama2-7b-chat-v2, 5: llama2-13b-chat-v2} qwen{0: qwen-turbo, 1: qwen-plus, 2: qwen-max, 3: qwen-max-0403, 4: qwen-max-0107, 5: qwen-max-1201, 6: qwen-max-longcontext}
+
+# local model config
+model_url: 'http://192.168.10.8:8055/send/data/'
+
+# ignore config
+ignore_list: [
+  'weixin',
+  'exmail_tool'
+  ]
